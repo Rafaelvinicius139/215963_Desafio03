@@ -1,0 +1,419 @@
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif; 
+}
+body{
+    background-image: url(imagens/img.svg);
+}
+
+.atualizar{
+    display:none;
+    text-align: center;
+    margin: auto;
+    width:50px;
+    background-color: white;
+    width:60px;
+    text-align: center;
+    border: white solid 1px;
+  
+}
+img{
+    font-size: 100px;
+}
+
+main{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#f5f9ff;
+    overflow-y:scroll;
+    align-items:none;
+
+    
+   
+}
+
+
+#conteiner_tarefa{
+    
+    width:710px;
+    border-radius:10px;
+    background-color: #ffffff;
+    border:solid 1px #f5f9ff;
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.2);
+    position: sticky;
+    margin: auto; /* Faz a lista rolar quando exceder o limite */
+  
+    
+ 
+    
+}
+
+#input_label{
+
+    padding-left: 16px;
+    position: sticky;
+  
+ 
+}
+
+#texto_conteiner_tarefa{
+    padding-left: 16px;
+   
+ 
+
+}
+
+input{
+    width: 254.5px;
+    font-size:16px;
+    font-weight: 400;
+    padding-top:16px;
+    padding-right:24px;
+    padding-bottom: 16px;
+    padding-left:24px;
+    gap:10px;
+    border:1px;
+    border-radius:1px;
+    color:black;
+    border: 1px solid #eeeeee;
+
+    
+}
+#mais{
+    width:45px;
+    height:45px;
+    color: white;
+    background-color: #2d70fd;
+    border-radius:4px;
+    padding:16px;
+    border:solid 1px #2d70fd;
+}
+
+#mais:hover{
+    width:45px;
+    height:45px;
+    color: #2d70fd;
+    background-color: white;
+    border-radius:4px;
+    padding:16px;
+    border:solid 1px #2d70fd;
+    transition: background-color 0.4s ease; 
+}
+
+
+    .conteudo {
+        position: sticky;
+        width: 658px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 16px;
+        margin-top: 16px;
+        margin-bottom:10px;
+        border-radius: 16px;
+        border: 1px solid #eeeeee;
+        
+     
+         
+    }
+
+    #js_colunas {
+        display:flex;
+        flex-direction:column;
+      
+        
+    }
+    
+
+
+.concluido{
+    width: 121px;
+    height:44px;
+    border-radius:4px;
+    border:1px;
+    background-color: #2d70fd;
+    color: white;
+}
+
+#concluido:hover{
+
+    width: 121px;
+    height:44px;
+    border-radius:4px;
+    border: solid 1px #2d70fd;
+    background-color: white;
+    color:#2d70fd;
+    transition:  0.4s ease; 
+
+}
+
+h2{
+    font-size: 16px;
+}
+
+p{
+    font-size:14px;
+    color:#babacb;
+
+}
+
+#conteudo_texto{
+   
+   flex-direction: column;
+   
+   width: 70%;
+   margin-top:15px;
+
+  
+}
+
+#conteudo_texto h2{
+    margin-left:50px;
+    margin-top:10px;
+}
+
+#conteudo_texto p{
+   margin-left:50px;
+
+}
+
+#conteudo_botao{
+
+    margin-right:40px;
+    
+}
+
+#rodape_aplicação{
+  
+    text-align:left;
+    width:95%;
+
+    margin-left:20px;
+    margin-top:50px;
+    margin-bottom: 20px;
+    border-top: solid  #eeeeee ;
+}
+
+#rodape_aplicação p {
+  text-align:right;
+}
+
+#conteiner_etiqueta{
+    display:flex;
+  
+ 
+}
+
+#etiquetas{
+    display:flex;
+  align-content: center;
+  padding-bottom: 10px;
+ 
+}
+
+#etiqueta{
+    background-color:white;
+    border: solid #B1BACB 2px;
+    color: #B1BACB;
+
+    border-radius:20px;
+    padding:5px;
+  
+    font-size:12px;
+
+}
+
+#datas{
+    padding:10px;
+    color: #B1BACB;
+    font-size: 14px;
+    margin-top:5px;
+}
+
+
+
+
+@media(min-width: 320px) and (max-width: 1024px) {
+
+    *{
+        margin: 0;
+    }
+
+  
+
+    #conteiner_tarefa{
+    
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    
+       
+    }
+
+    #texto_conteiner_tarefa{
+        text-align: left;
+        padding-left:40px;
+    }
+
+    input{
+        width:80%;
+        margin:10px;
+
+    }
+
+    #mais{
+
+        width:90%;
+
+    }
+
+    #mais:hover{
+
+        width:90%;
+
+    }
+
+    .conteudo{
+        width:90%;
+        display: flex;
+        flex-direction:column;
+        text-align:left;
+        background-color: white;
+        margin-left:40px;
+    }
+
+    #conteudo_texto{
+   
+        flex-direction: column;
+        
+        width:98%;
+        margin-top:15px;
+        text-align: right;
+      
+     
+       
+     }
+
+     #conteudo-titulo{
+      
+        text-align:left;
+        width:100%;
+     }
+
+     #conteudo-titulo h2{
+       
+        text-align:left;
+        padding-right: 20px;
+        padding:10px;
+        margin-left: 10px;
+     }
+
+    
+    #etiquetas{
+        display: flex;
+        flex-direction:column;
+      
+        align-items:center;
+        background-color: white;
+        width:50%;
+        text-align:right;
+        margin-right:100px;
+    }
+
+    #conteudo_botao{
+        width:30%;
+       
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-bottom:30px;
+
+    }
+
+    #concluido{
+        
+        text-align: center;
+      
+        width:50%;
+        margin:auto;
+
+
+    }
+
+    #concluido:hover{
+        
+        text-align: center;
+      
+        width:100%;
+        margin:auto;
+
+
+    }
+    span{
+
+        width:80%;
+       
+      
+       text-align:center;
+       margin-right:50px;
+       padding: 5px;
+       border-radius:  white solid 1px;
+    }
+    #etiqueta2{
+        
+        background-color:white;
+        border: solid white 2px;
+      
+    
+        border-radius:40px;
+       
+      
+        font-size:12px;
+        text-align:right;
+        margin-right:120px;
+        
+       
+    
+    }
+
+    #etiqueta2 p{
+        width:30%;
+        background-color:white;
+    }
+
+    span.etiqueta2 {
+        width:60%;
+        text-align:center;
+        margin-right:120px;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 5px;
+       /* exemplo opcional para dar contraste */
+    }
+
+   
+
+    
+
+   
+
+   
+
+    
+   
+  }
+
+
+
+
+
+
+
